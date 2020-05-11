@@ -1,9 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-<<<<<<< HEAD
-=======
 import '../styles/styles.scss'
->>>>>>> b1698d125a9b44921f969ccdc5f4178f684835b5
 
 import Layout from "../components/layout"
 import Image from "../components/image"
