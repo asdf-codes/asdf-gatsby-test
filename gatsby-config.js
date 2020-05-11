@@ -30,6 +30,20 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extension: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ]
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `asdf`,
