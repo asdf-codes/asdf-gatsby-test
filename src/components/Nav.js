@@ -17,7 +17,7 @@ export const Nav = () => {
             <Link to="/">
                 <img 
                     src={data.logl.publicURL} 
-                    alt="My logo"
+                    alt="My log"
                     style={{
                         margin: `0 auto`,
                         maxWidth: '5rem',
