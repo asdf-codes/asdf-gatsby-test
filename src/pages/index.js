@@ -11,7 +11,7 @@ import SEO from "../components/seo"
 export const IndexPage = () => {
   return(
     <Container>
-      <h1>hello world</h1>
+      
     </Container>
   )
 }

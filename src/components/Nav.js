@@ -1,12 +1,12 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from 'gatsby'
-import { NavWrapper } from "../elements"
+import { NavWrapper } from "../elements/NavElements"
 
 export const Nav = () => {
     
     const data = useStaticQuery(graphql`
         query {
-            logl: file(relativePath: {eq: "logl.svg"}) {
+            a613: file(relativePath: {eq: "a613.svg"}) {
                 publicURL
             }
         }
@@ -16,7 +16,7 @@ export const Nav = () => {
         <NavWrapper>
             <Link to="/">
                 <img 
-                    src={data.logl.publicURL} 
+                    src={data.a613.publicURL} 
                     alt="My log"
                     style={{
                         margin: `0 auto`,
