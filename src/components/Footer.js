@@ -33,7 +33,7 @@ export const Footer = () => {
                         <img src={data.medium.publicURL} alt="facebooklogo"/>
                     </a>
                 </FooterSocialIcons>
-                <P size="xSmall" color="light1">∞bye world∞</P>
+                <P size="xSmall" color="light1">∞bye, World∞</P>
             </FooterSocialWrapper>
         </FooterWrapper>
     )
