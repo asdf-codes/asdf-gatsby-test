@@ -7,7 +7,6 @@ export const FooterWrapper = styled.footer `
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: black;
 
     @media ${props => props.theme.breakpoints.tablet} {
         grid-column: 2 / span 6;
