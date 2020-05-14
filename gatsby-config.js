@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `asdf`,
-    description: `asdf`,
+    description: `asdf-gatsby-first-site`,
+    url: 'asdf.codes',
+    image: '/cover.png',
+    twitterUsername: 'hello',
     author: `asdf`,
   },
   plugins: [
