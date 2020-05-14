@@ -20,8 +20,7 @@ export const FeatureImage = ({fixed}) => {
             <Img fixed={fixed ? fixed : data.imageSharp.fixed} style={{
                 position: "absolute",
                 margin: "0 auto",
-                width: "10rem",
-                height: "10rem",
+                
                 }}/>
         </FeatureImageWrapper>
     )
