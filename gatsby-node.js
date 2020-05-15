@@ -33,7 +33,7 @@ exports.createPages = async function({actions, graphql}) {
         })
     })
 
-//create single blog posts
+// create single blog posts
     data.allMdx.edges.forEach(edge => {
         const slug = edge.node.frontmatter.slug
         const id = edge.node.id
@@ -44,7 +44,6 @@ exports.createPages = async function({actions, graphql}) {
         })
     })
 }
-
 // exports.createPages = async function ({actions, graphql}) {
 //     const {data} = await graphql(`
 //         query {
