@@ -23,7 +23,7 @@ const allPosts = ({pageContext, data}) => {
     return (
         <Container>
             <Seo />
-            <FeatureImage />
+            {/* <FeatureImage /> */}
             <Content>
                 {/* <H1 textAlign="center" margin="0 0 1rem 0">
                     hello, World
