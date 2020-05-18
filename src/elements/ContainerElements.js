@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const ContainerWrapper = styled.div`
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr repeat(12, minmax(auto, 4.2rem)) 1fr;
     gap: 0 2rem;

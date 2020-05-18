@@ -2,10 +2,9 @@ import styled from "styled-components"
 
 
 export const FeatureImageWrapper = styled.div `
-    grid-column: 3 / span 10;
-    grid-row: 2/ span 4;
-    overflow: hidden;
-    position: relative;
+    /* width: clamp(auto 50% 100vh);
+    height: clamp(auto 50% 50vh);
+    position: relative; */
     display: flex;
     justify-content: center;
 

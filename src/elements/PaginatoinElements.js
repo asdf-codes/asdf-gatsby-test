@@ -3,44 +3,42 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 export const PaginationWrapper = styled.div `
-    grid-column: 2 / span 12;
+   
     padding: 3rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    z-index: 10;
 
-    a: nth-child(1) {
-        color: ${props => 
+    a:nth-child(1) {
+        color: ${props =>
             props.isFirst ? props.theme.colors.dark3 : props.theme.colors.dark1};
-        pointer-events: ${props => 
-            props.isFirst ? "none" : "auto"};
-        cursor: ${props => 
-            props.isFirst ? "default" : "pointer"};
+        pointer-events: ${props => props.isFirst ? "none" : "auto"};
+        cursor: ${props => props.isFirst ? "default" : "pointer"};
     }
-
-    a: nth-child(2) {
-        color: ${props => 
+    a:nth-child(2) {
+        color: ${props =>
             props.isLast ? props.theme.colors.dark3 : props.theme.colors.dark1};
-        pointer-events: ${props => 
-            props.isLast ? "none" : "auto"};
-        cursor: ${props => 
-            props.isLast ? "default" : "pointer"};
+        pointer-events: ${props => props.isLast ? "none" : "auto"};
+        cursor: ${props => props.isLast ? "default" : "pointer"};
     }
-
     @media ${props => props.theme.breakpoints.tablet} {
         grid-column: 2 / span 6;
     }
 `
 
-export const PaginationElement = styled(props => <Link {...props} />) `
+export const PaginationElement = styled(props => <Link {...props} />)`
     font-size: 0.875rem;
-    line-heigh: 1.125rem;
+    line-height: 1.125rem;
     font-weight: 400;
     text-decoration: none;
     margin: 0 2rem;
-
-    &:focus, 
-    &:hover {
+    &:hover,
+    &:focus {
         text-decoration: underline;
     }
 `

@@ -45,7 +45,7 @@ const allPosts = ({pageContext, data}) => {
             <Pagination 
                 isFirst={isFirst}
                 isLast={isLast}
-                previousPage={prevPage}
+                prevPage={prevPage}
                 nextPage={nextPage}
             />
         </Container>
